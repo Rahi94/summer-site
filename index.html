@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="overflow-x-hidden bg-[#F8F8F8]">
+    <header
+        class="bg-[#F9F6E2] flex flex-col lg:flex-row items-center justify-around lg:h-screen lg:py-0 py-12 lg:w-[1920px] mx-auto">
+        <div class="text-center">
+            <h2 class="lg:text-2xl text-xl font-semibold">---SALE FEVER---</h2>
+            <h1 class="lg:text-6xl text-2xl font-bold">Purchase TK 200 or <br> above & get <span
+                    class="text-pink-500">20%
+                    off</span> </h1>
+            <h2 class="font-semibold text-lg mt-6">Use Promo Code <button class="btn btn-secondary">SELL200</button>
+            </h2>
+        </div>
+        <div class="">
+            <img class="lg:w-full md:w-2/3 w-1/3 mx-auto" src="./images/Summer 1.png" alt="">
+        </div>
+    </header>
+
+    <section class="lg:w-[1480px]  mx-auto flex lg:flex-row flex-col-reverse justify-between">
+        <div class="flex flex-col">
+            <div>
+                <h2 class="text-4xl font-semibold my-12 lg:text-left text-center">Kitchenware</h2>
+                <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-8 gap-4 place-items-center">
+                    <div onclick="addToCart('accessories-name', 'cart-container', 'accessories-price')"
+                        class="card w-[342px] bg-base-100 shadow-xl justify-center">
+                        <figure><img class="bg-slate-200 px-16 mt-6 py-3 rounded-lg" src="./images/prod1.png"
+                                alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <div class="rating mx-auto">
+                                <input name="rating-2" class="mask mask-star-2 bg-orange-400 " />
+                                <input name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input name="rating-2" class="mask mask-star-2 bg-orange-400 opacity-40" />
+                                <input name="rating-2" class="mask mask-star-2 bg-orange-400 opacity-40" />
+                                <input name="rating-2" class="mask mask-star-2 bg-orange-400 opacity-40" />
+                            </div>
+                            <h2 id="accessories-name" class="card-title mx-auto">K. Accessories</h2>
+                            <p id="accessories-price" class="text-center text-xl">39.00 TK</p>
+                        </div>
+                    </div>
+                    <div onclick="addToCart('k-name', 'cart-container', 'k-price')"
+                        class="card w-[342px] bg-base-100 shadow-xl justify-center">
+                        <figure><img class="bg-slate-200 px-16 mt-6 py-3 rounded-lg" src="./images/prod2.png"
+                                alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <div class="rating mx-auto">
+                                <input name="rating-2" class="mask mask-star-2 bg-orange-400 opacity-40" />
+                                <input name="rating-2" class="mask mask-star-2 bg-orange-400 opacity-40" />
+                                <input name="rating-2" class="mask mask-star-2 bg-orange-400 opacity-40" />
+                                <input name="rating-2" class="mask mask-star-2 bg-orange-400 opacity-40" />
+                                <input name="rating-2" class="mask mask-star-2 bg-orange-400 opacity-40" />
+                            </div>
+                            <h2 id="k-name" class="card-title mx-auto">K. Accessories</h2>
+                            <p id="k-price" class="text-center text-xl">25.00 TK</p>
+                        </div>
+                    </div>
+                    <div onclick="addToCart('cooker-name', 'cart-container', 'cooker-price')"
+                        class="card w-[342px] bg-base-100 shadow-xl justify-center">
+                        <figure><img class="bg-slate-200 px-16 mt-6 py-3 rounded-lg" src="./images/prod3.png"
+                                alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <div class="rating mx-auto">
+                                <input name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input name="rating-2" class="mask mask-star-2 bg-orange-400 opacity-40" />
+                            </div>
+                            <h2 id="cooker-name" class="card-title mx-auto">Home Cooker</h2>
+                            <p id="cooker-price" class="text-center text-xl">49.00 TK</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2 class="text-4xl font-semibold my-12 lg:text-left text-center">SportsWear</h2>
+                <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 place-items-center">
+                    <div onclick="addToCart('cap-name', 'cart-container', 'cap-price')"
+                        class="card w-[342px] bg-base-100 shadow-xl justify-center">
+                        <figure><img class="bg-slate-200 px-16 mt-6 py-3 rounded-lg" src="./images/prod4.png"
+                                alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <div class="rating mx-auto">
+                                <input name="rating-2" class="mask mask-star-2 bg-orange-400 " />
+                                <input name="rating-2" class="mask mask-star-2 bg-orange-400 " />
+                                <input name="rating-2" class="mask mask-star-2 bg-orange-400 opacity-40" />
+                                <input name="rating-2" class="mask mask-star-2 bg-orange-400 opacity-40" />
+                                <input name="rating-2" class="mask mask-star-2 bg-orange-400 opacity-40" />
+                            </div>
+                            <h2 id="cap-name" class="card-title mx-auto">Sports Back Cap</h2>
+                            <p id="cap-price" class="text-center text-xl">49.00 TK</p>
+                        </div>
+                    </div>
+                    <div onclick="addToCart('jersey-name', 'cart-container', 'jersey-price')"
+                        class="card w-[342px] bg-base-100 shadow-xl justify-center">
+                        <figure><img class="bg-slate-200 px-16 mt-6 py-3 rounded-lg" src="./images/prod5.png"
+                                alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <div class="rating mx-auto">
+                                <input name="rating-2" class="mask mask-star-2 bg-orange-400 " />
+                                <input name="rating-2" class="mask mask-star-2 bg-orange-400 " />
+                                <input name="rating-2" class="mask mask-star-2 bg-orange-400 " />
+                                <input name="rating-2" class="mask mask-star-2 bg-orange-400 " />
+                                <input name="rating-2" class="mask mask-star-2 bg-orange-400 opacity-40" />
+                            </div>
+                            <h2 id="jersey-name" class="card-title mx-auto">Full Jersey Set</h2>
+                            <p id="jersey-price" class="text-center text-xl">69.00 TK</p>
+                        </div>
+                    </div>
+                    <div onclick="addToCart('sports-name', 'cart-container', 'sports-price')"
+                        class="card w-[342px] bg-base-100 shadow-xl justify-center">
+                        <figure><img class="bg-slate-200 px-16 mt-6 py-3 rounded-lg" src="./images/prod6.png"
+                                alt="Shoes" />
+                        </figure>
+                        <div class="card-body">
+                            <div class="rating mx-auto">
+                                <input name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input name="rating-2" class="mask mask-star-2 bg-orange-400 opacity-40" />
+                                <input name="rating-2" class="mask mask-star-2 bg-orange-400 opacity-40" />
+                            </div>
+                            <h2 id="sports-name" class="card-title mx-auto">Sports cates</h2>
+                            <p id="sports-price" class="text-center text-xl">159.00 TK</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="lg:mt-40 mx-auto lg:py-6 lg:px-4 lg:w-[350px]">
+            <h3 class="text-xl font-semibold my-2">Have a coupon? </h3>
+            <input id="coupon-input" type="text" placeholder="coupon here"
+                class="input input-bordered w-56 max-w-xs absolute" />
+            <button id="coupon-btn" class="btn bg-pink-500 hover:bg-pink-500 text-white relative left-[150px]"
+                disabled>Apply</button>
+            <div>
+                <!-- Selected Product Container -->
+                <div class="p-6">
+                    <ol id="cart-container" class="list-decimal font-semibold text-lg">
+
+                    </ol>
+                </div>
+                <hr class="border-2 my-4">
+                <!-- Total, Discount container -->
+                <div class="ml-2">
+                    <h4 class="font-semibold text-lg my-1">Total Price : <span id="total-price-id">0</span> Tk</h4>
+                    <h4 class="font-semibold text-lg my-1">Discount : <span id="discount-id">0</span> Tk </h4>
+                    <h4 class="font-semibold text-lg my-1">Total : <span id="total-id">0</span> Tk </h4>
+                    <hr class="border-2 my-4">
+                </div>
+                <!-- <button id="purchase-btn" class="btn btn-secondary mt-4" disabled>Make Purchase</button> -->
+                <!-- Open the modal using ID.showModal() method -->
+                <button class="btn btn-secondary mt-4" disabled id="purchase-btn" onclick="my_modal_1.showModal()">Make
+                    Purchase</button>
+                <dialog id="my_modal_1" class="modal">
+                    <form method="dialog" class="modal-box">
+                        <img class="mx-auto" src="./images/congo.png" alt="">
+                        <h3 class="font-bold text-center text-2xl">Congratulations</h3>
+                        <p class="py-4 text-center">Your Purchased the Product</p>
+                        <div class="modal-action">
+                            <!-- if there is a button in form, it will close the modal -->
+                            <button onclick="window.location.reload()" class="btn mx-auto btn-secondary">Go to
+                                Home</button>
+                        </div>
+                    </form>
+                </dialog>
+            </div>
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+
+</html>
